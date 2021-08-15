@@ -34,6 +34,7 @@ gem 'turbolinks', '~> 5'
 gem 'twilio-ruby'
 gem 'unicorn'
 gem 'webpacker', '~> 4.0'
+gem 'cancancan', '=3.2.0'
 
 group :development, :test do
   gem 'brakeman'

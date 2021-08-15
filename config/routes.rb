@@ -6,11 +6,23 @@ Rails.application.routes.draw do
     sessions: 'admin_users/sessions'
   }, skip: %w[registrations]
 
+  devise_for :users, controllers: {
+    sessions: 'users/sessions'
+  }
+
   root to: 'application#redirect_to_sign_in'
 
   resources :admin_users, only: %w[#<WebFront:0x00007ffa4cf05750>]
+  resources :users, only: %i[index create show edit update destroy]
 
   namespace :api do
+    namespace :v1 do
+      resources :searches, controller: 'searches', only: [] do
+        collection do
+          get 'search'
+        end
+      end
+    end
   end
 
   namespace :dashboard do

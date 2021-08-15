@@ -10,7 +10,7 @@ class SearchService
     search_result = {}
     search_result[:reviews_by_title]       = fetch_reviews_by_title
     search_result[:reviews_by_description] = fetch_reviews_by_description
-    search_result[:reviews_by_user_name]   = fetch_reviews_by_user_name || []
+    search_result[:reviews_by_user_name]   = fetch_reviews_by_user_name
     search_result.as_json
   end
 

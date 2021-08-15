@@ -6,7 +6,7 @@
 #  title       :string(255)
 #  author_name :string(255)
 #  publisher   :string(255)
-#  edition		 :integer
+#  edition     :integer
 
 # frozen_string_literal: true
 

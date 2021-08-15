@@ -4,10 +4,10 @@
 #
 #  id          :integer
 #  user_id     :integer
-#  book_id 		 :integer
+#  book_id     :integer
 #  title       :string(255)
 #  description :string(255)
-#  rate 			 :integer
+#  rate        :integer
 
 # frozen_string_literal: true
 

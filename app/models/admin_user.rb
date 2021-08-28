@@ -5,8 +5,6 @@ class AdminUser < ApplicationRecord
 
 
 
-
-
   validates :email, presence: true  
 
 
